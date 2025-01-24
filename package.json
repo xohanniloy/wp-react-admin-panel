@@ -1,0 +1,17 @@
+{
+  "name": "react-admin-panel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wp-scripts start assets/settings/main.js --output-path=assets/build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.9.0"
+  },
+  "dependencies": {
+    "react-router": "^7.1.3"
+  }
+}
