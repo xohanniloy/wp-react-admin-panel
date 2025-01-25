@@ -95,7 +95,6 @@ const Home = () => {
     }).then(res => {
       return res.json();
     }).then(res => {
-      setFormValue;
       console.log(res.data);
       setFormValue(res.data);
     });
@@ -141,7 +140,7 @@ const Home = () => {
                     value: "2",
                     children: "Option 2"
                   }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("option", {
-                    value: "2",
+                    value: "3",
                     children: "Option 3"
                   })]
                 })
@@ -170,7 +169,7 @@ const Home = () => {
                     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
                       type: "radio",
                       name: "select_radio",
-                      value: ""
+                      value: "3"
                     }), "Three"]
                   })]
                 })

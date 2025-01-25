@@ -24,7 +24,6 @@ const Home = () => {
       .then((res) =>{
         return res.json();
       }).then((res) => {
-        setFormValue
         console.log(res.data);
         setFormValue(res.data);
       });
@@ -54,7 +53,7 @@ const Home = () => {
                     <option value="">Select</option>
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
-                    <option value="2">Option 3</option>
+                    <option value="3">Option 3</option>
                   </select>
                 </td>
               </tr>
@@ -76,7 +75,7 @@ const Home = () => {
                     </label>
                     <br />
                     <label>
-                      <input type="radio" name="select_radio" value="" />
+                      <input type="radio" name="select_radio" value="3" />
                       Three
                     </label>
                   </fieldset>

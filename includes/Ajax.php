@@ -8,13 +8,13 @@ class Ajax {
 
     function react_form_submit() {
         check_ajax_referer( 'react-admin-panel_nonce', 'nonce' );
-        $title = isset( $_post['title'] ) ? sanitize_text_field( $_post['title'] ) : '';
-        $choose_option = isset( $_post['choose_option'] ) ? sanitize_text_field( $_post['choose_option'] ) : '';
-        $select_radio = isset( $_post['select_radio'] ) ? sanitize_text_field( $_post['select_radio'] ) : '';
+        $title = isset( $_POST['title'] ) ? sanitize_text_field( $_POST['title'] ) : '';
+        $choose_option = isset( $_POST['choose_option'] ) ? sanitize_text_field( $_POST['choose_option'] ) : '';
+        $select_radio = isset( $_POST['select_radio'] ) ? sanitize_text_field( $_POST['select_radio'] ) : '';
 
         $select_checkbox = array();
-        if ( isset( $_post['select_checkbox']) && is_array( $_post['select_checkbox'] ) )  {
-            $select_checkbox = array_map( 'sanitize_text_field', $_post['select_checkbox'] );
+        if ( isset( $_POST['select_checkbox']) && is_array( $_POST['select_checkbox'] ) )  {
+            $select_checkbox = array_map( 'sanitize_text_field', $_POST['select_checkbox'] );
         }
 
         $data = array(
